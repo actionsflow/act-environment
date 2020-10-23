@@ -14,7 +14,7 @@ This is the default [Actionsflow](https://github.com/actionsflow/actionsflow) ac
 ## Getting Started <a name = "getting_started"></a>
 
 ```bash
-act -P ubuntu-latest=actionsflow/act-environment:latest
+act -P ubuntu-latest=actionsflow/act-environment:v1
 ```
 
 See also [at act](https://github.com/nektos/act#use-an-alternative-runner-image)
@@ -22,5 +22,11 @@ See also [at act](https://github.com/nektos/act#use-an-alternative-runner-image)
 ## Publish
 
 ```bash
-docker build -t actionsflow/act-environment . && docker push actionsflow/act-environment
+docker build -t actionsflow/act-environment:latest . && docker push actionsflow/act-environment:latest
+```
+
+Release:
+
+```bash
+docker tag actionsflow/act-environment:latest actionsflow/act-environment:v1 && docker push actionsflow/act-environment:v1
 ```
