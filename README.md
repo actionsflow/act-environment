@@ -7,7 +7,7 @@
 
 ## About <a name = "about"></a>
 
-[Act](https://github.com/nektos/act) Environment docker image. This image is based on `node:lts-buster-slim`, add `git` supporting. 
+[Act](https://github.com/nektos/act) Environment docker image. This image is based on `node:lts-buster-slim`, add `git`,`curl` supporting. 
 
 This is the default [Actionsflow](https://github.com/actionsflow/actionsflow) act enviroment by [setup-act-for-actionsflow](https://github.com/actionsflow/setup-act-for-actionsflow)
 
